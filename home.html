@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet" >
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <script src="jquery-3.3.1.js"></script> -->
+  </head>
+  <body>
+  	<header>
+  		<div id="navbar">
+  			<div id="logo">
+  				<a href="home.html"><img src="img/logo.png" alt="logo"></a>
+  			</div>
+  			<div id="nav">
+  				<a href="home.html#contact">Contact</a>
+  				<a href="home.html#work">Works</a>
+  				<a href="home.html#about">About</a>
+  			</div>
+  			<div class="container" id="burg" onclick="showMenu(this)">
+  				<div class="bar1"></div>
+  				<div class="bar2"></div>
+  				<div class="bar3"></div>
+  				<div id="nav2">
+				<a href="home.html#about">About</a>
+				<a href="home.html#work">Works</a>
+  				<a href="home.html#contact">Contact</a>	
+  				</div>
+			</div>
+			
+		</div>
+  	</header>
+  	<section id="about">
+  		<div id="cover">
+  			<img src="img/logo.png" alt="name tag">
+  			<h1 id="ux/ui">UX/UI Designer</h1>
+  			<a id="showMore" onclick="showBio()" >More About Me</a>
+  			<p id="myBio">I am enthusiastic about interface design and enjoy working towards improving user experience. My experience in SFU has taught me to design user interaction that is as efficient as possible to maximize usability and help the user accomplish their goals. Moreover, I have the strong illustrator and photoshop skills necessary to enhance my designs and to convey my ideas and concepts to clients. I am also familiar with using html and css for web design. I am currently a student at Simon Fraser University in the School of Interactive Arts and Technology pursuing a concentration in Design.</p>
+        <h1 id="arrow">V</h1>
+        <h1 id="arrow1">V</h1>
+  		</div>
+
+  	</section>
+  	<section id="work">
+  		<h1>Works</h1>
+  		<div id="projectList">
+  			<div class="project">
+	  			<a href="project1.html">
+	            	<figure class="projectImg" id="proj1" >
+	              		<img src="img/1.png" alt="project1">
+	              		<figcaption>Information Design</figcaption>
+	              		<div class="moreDetail" id="proj1-1">
+    						Click for Detail
+ 					 	</div>
+	            	</figure>
+	        	</a>
+	        </div>
+	        <div class="project">
+	  			<a href="project2.html">
+	            	<figure class="projectImg" id="proj2" >
+	              		<img src="img/program.jpg" alt="project2">
+	              		<figcaption>Urban Space</figcaption>
+	              		<div class="moreDetail" id="proj2-1">
+    						Click for Detail
+ 					 	</div>
+	            	</figure>
+	            	
+	        	</a>
+	        </div>
+  		</div>
+  	</section>
+  	<section id="contact">
+  		<h1>Contact</h1>
+		  <form id="contactMe">
+		    <input type="text" id="name" name="sender" placeholder="Your name..">
+		    <input type="text" id="email" name="semai" placeholder="Your e-mail..">
+		    <input type="text" id="subject" name="ssubject" placeholder="Subject">
+		    <textarea id="message" name="smessage" placeholder="Write something.."></textarea>
+		    <input type="submit" value="Submit">
+		  </form>
+  	</section>
+  	<footer>
+  		<div id="footer-con">
+  			<div id="footer-nav">
+  				<a href="home.html#about">About</a>
+	  			<a href="home.html#work">Works</a>
+	  			<a href="home.html#contact">Contact</a>
+	  		</div>
+	  		<div id="footer-social">
+	  			<a href="#" class="fa fa-instagram"><em> Instagram</em></a>
+	  			<a href="#" class="fa fa-facebook"><em>   Facebook</em></a>
+	  			<a href="#" class="fa fa-twitter"><em>  Twitter</em></a>
+	  		</div>
+
+  		</div>
+  		<div id="cr">
+	  			<p>copyringt 2018, name here</p>
+	  	</div>
+
+  	</footer>
+
+  	
+  		
+
+  	<script>
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+	    	if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+	       		document.getElementById("navbar").style.top = "0";
+	    	}  else {
+	        	document.getElementById("navbar").style.top = "-75px";
+	    	}
+		}
+		function showBio() {
+    		document.getElementById("ux/ui").style.display = "none";
+    		document.getElementById("showMore").style.display = "none";
+    		document.getElementById("myBio").style.display = "block";
+		}
+		function showMenu(x) {
+    		x.classList.toggle("change");
+		}
+	</script>
+  </body>
+
+</html>

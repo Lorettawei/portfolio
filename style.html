@@ -1,0 +1,262 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <title>P03 - Style Guide Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="normalize.css" rel="stylesheet" >
+    <link href="css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+  </head>
+
+  <body>
+<section class="center">
+  
+
+    <h1>Style Guide</h1>
+
+<div >
+    <p>Style Guide for Sunrise Realty, a realty business company. </p>
+</div>
+    <nav>
+
+      <p>
+        On this page:
+      </p>
+      
+          <a href="#interactive_elements">Interactive Elements</a>
+        
+          <a href="#text_elements">Text Elements</a>
+        
+          <a href="#combined_elements">Combined Elements</a>
+        
+
+      <p>Other pages:</p>
+      <a href="home.html">Web Page</a>
+      <a href="citations.html">Citations</a>
+      
+
+    </nav>
+
+</section >
+
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+
+      <!-- Default Button styling section -->
+      <section class="center1">
+
+        <h2>Navigation Button</h2>
+
+        <h4>CSS selector:</h4>
+        <p >#showMore</p>
+
+        <h4>Sample code:</h4>
+        <code>
+        &lt;a href="#" id="showMore"&gt;Default button&lt;/a&gt;
+      </code>
+
+
+        <h4>Rendered element:</h4>
+        <div id="cover">
+          <a>More About Me</a>
+        </div>
+        
+
+      </section>
+
+      <section class="center">
+        <h2>Submit/Reset Buttons</h2>
+        <h4>CSS selector:</h4>
+        <p>input[type=submit]</p>
+        <h4>Sample code:</h4>
+        <code>&lt;input type="submit" value="Submit"&gt;</code>
+        <h4>Rendered element:</h4>
+        <input type="submit" value="Submit">
+      </section>
+
+      <section class="center1">
+        <h2>Text Input Field</h2>
+        <h4>CSS selector:</h4>
+        <p>input[type=text]</p>
+        <h4>Sample code:</h4>
+        <code>&lt;form&gt;&lt;input type="text" id="name" name="sender" placeholder="Your name.."&gt;&lt;form&gt;</code>
+        <h4>Rendered element:</h4>
+        <form id="contactMe"><input type="text" id="name" name="sender" placeholder="Your name.."></form>
+      </section>
+
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+
+      <section class="center">
+        <h2>Headings</h2>
+        <h4>CSS selector:</h4>
+        <p>h2,h3,h4,h5</p>
+        <h4>Sample code:</h4>
+        <code>&lt;h2&gt;House Lists&lt;/h2&gt;</code>
+        <code>&lt;h3&gt;House Lists&lt;/h3&gt;</code>
+        <code>&lt;h4&gt;House Lists&lt;/h4&gt;</code>
+        <code>&lt;h5&gt;House Lists&lt;/h5&gt;</code>
+        <h4>Rendered element:</h4>
+                <h2 class="textstyle">House Lists</h2>
+                <h3 class="textstyle">House Lists</h3>
+                <h4 class="textstyle">House Lists</h4>
+                <h5 class="textstyle">House Lists</h5>
+      </section>
+
+      <section class="center1">
+        <h2>Paragraphs</h2>
+        <h4>CSS selector:</h4>
+        <p>p</p>
+        <h4>Sample code:</h4>
+        <code>&lt;p&gt;Sunrise Realty was established in November, 2012.&lt;p&gt;</code>
+        <h4>Rendered element:</h4>
+        <p>Sunrise Realty was established in November, 2012. Our head office is in Richmond, BC, and we are rapidly expanding our business to areas including Vancouver, Burnaby and beyond. As of October 2015, New Coast Realty has 422 associates, including the management team, marketing staff and realtors. New Coast Realty’s scope of business includes real estate investment, buying and selling of residential and commercial properties, property management, investment consultation, realtor licensing exam training and preparation, and real estate marketing strategy training. </p>
+      </section>
+
+      <!-- <section class="center">
+        <h2>Bulleted Lists</h2>
+        <h4>CSS selector:</h4>
+        <p>ul</p>
+        <h4>Sample code:</h4>
+        <code>&lt;ul&gt;
+              &lt;li&gt;House&lt;/li&gt;
+              &lt;li&gt;Condo&lt;/li&gt;
+              &lt;li&gt;Townhouse&lt;/li&gt;
+              &lt;/ul&gt;</code>
+         <h4>Rendered element:</h4>
+         <ul>
+           <li>House</li>
+           <li>Condo</li>
+           <li>Townhouse</li>
+
+         </ul>
+      </section> -->
+
+      <!-- <section class="center">
+        <h2>Numbered Lists</h2>
+        <h4>CSS selector:</h4>
+        <p>ol</p>
+        <h4>Sample code:</h4>
+        <code>&lt;ol&gt;
+              &lt;li&gt;House&lt;/li&gt;
+              &lt;li&gt;Condo&lt;/li&gt;
+              &lt;li&gt;Townhouse&lt;/li&gt;
+              &lt;/ol&gt;</code>
+         <h4>Rendered element:</h4>
+         <ol>
+           <li>House</li>
+           <li>Condo</li>
+           <li>Townhouse</li>
+         </ol>
+      </section> -->
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+
+      <section class="center">
+        <h2>Main Navigation</h2>
+        <h4>CSS selector:</h4>
+        <p>#nav</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;div id="nav"&gt;&lt;a href="#"&gt;about&lt;/a&gt;
+        &lt;a class="nav" href="#"&gt;work&lt;/a&gt;
+        &lt;a class="nav" href="#"&gt;Contact&lt;/a&gt;&lt;/div&gt;
+        </code>
+
+      <h4>Rendered element:</h4>
+      <div id="navbar2">
+      <div id="nav">
+        <a href="#">Contact</a>
+          <a href="#">Works</a>
+          <a href="#">About</a>
+    </div>
+  </div>
+
+      </section>
+<section class="center">
+
+
+</section>
+<section class="center">
+
+
+</section>
+      <section class="center1">
+        <h2>Product Listing</h2>
+        <h4>CSS selector:</h4>
+        <p>#projectList</p>
+        <h4>Sample code:</h4>
+        <code>&lt;div id="projectList"&gt;&lt;div class="project"&gt;
+          &lt;figure class="projectImg" id="proj1" &gt;
+          &lt;img src="img/cover.jpg" alt="project1"&gt;
+          &lt;figcaption&gt;project name&lt;/figcaption&gt;
+          &lt;div class="project" id="proj1-1"&gt;Click for Detail&lt;/div&gt;
+          &lt;/figure&gt;
+          &lt;/div&gt;&lt;/div&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <div id="projectList">
+        <div class="project">
+          <a href="#">
+                <figure class="projectImg" id="proj1" >
+                    <img src="img/cover.jpg" alt="project1">
+                    <figcaption>project name</figcaption>
+                    <div class="moreDetail" id="proj1-1">
+                Click for Detail
+            </div>
+                </figure>
+            </a>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Website Color Swatches -->
+      <section class="center">
+        <h2>Website Color Swatches</h2>
+        <h4>CSS selector:</h4>
+        <p>.color1, .color2, .color3,.color4,.color5,.color6</p>
+        <h4>Sample code:</h4>
+
+        <code>&lt;div class="color1"&gt;Section Color1: #beddfd&lt;/div&gt;</code>
+        <code>&lt;div class="color2"&gt;Section Color2: #cdfcf0&lt;/div&gt;</code>
+        <code>&lt;div class="color3"&gt;Section Color3: #fcfbcd&lt;/div&gt;</code>
+        <code>&lt;div class="color4"&gt;Footer Color: #fcd1b5&lt;/div&gt;</code>
+        <code>&lt;div class="color5"&gt;Button Color: #9c9c9c&lt;/div&gt;</code>
+        <code>&lt;div class="color6"&gt;Text Color: #5c5c5c&lt;/div&gt;</code>
+        <h4>Rendered element:</h4>
+
+          <div class="color1">Section Color1: #beddfd</div>
+          <div class="color2">Section Color2: #cdfcf0</div>
+          <div class="color3">Section Color3: #fcfbcd</div>
+          <div class="color4">Footer Color: #fcd1b5</div>
+          <div class="color5">Button Color: #9c9c9c</div>
+          <div class="color6">Text Color: #5c5c5c</div>
+
+    </section>
+
+        <!-- Website Grid Structure -->
+
+    </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
+    <footer>
+      <div id="cr">
+          <p>copyringt 2018, name here</p>
+      </div>
+    </footer>
+
+  </body>
+</html>
