@@ -1,8 +1,9 @@
 body,html{
+    font-size: 12pt;
     margin: 0em;
     height: 100%;
     min-height: 650px;
-    min-width: 480px;
+    min-width: 300px;
     font-family: 'Open Sans', sans-serif;
 
 }
@@ -92,14 +93,12 @@ body,html{
 }
 
 .change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
     transform: rotate(-45deg) translate(-9px, 6px);
 }
 
 .change .bar2 {opacity: 0;}
 
 .change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
 }
 
@@ -171,6 +170,7 @@ body,html{
     margin-top: 2em;
     transition: box-shadow 0.3s;
     font-style: normal;
+    cursor: pointer;
 }
 
 #cover em:hover {
@@ -178,11 +178,19 @@ body,html{
     box-shadow: 3px 3px 10px rgba(0,0,0,0.5);
 }
 
-#cover p{
+#cover #myBio{
     color: #fff;
     background-color: rgba(0,0,0,0.2);
     padding: 1em;
     display: none;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+}
+
+#cover p{
+    color: #fff;
+    background-color: rgba(0,0,0,0.2);
+    padding: 1em;
     animation-name: fadeIn;
     animation-duration: 2s;
 }
@@ -192,7 +200,7 @@ body,html{
     margin-top: 1em;
     margin-bottom:0em;
 }
- #arrow img{
+#arrow img{
     width: 50px;
     margin-top:30%;
  }
@@ -203,7 +211,7 @@ body,html{
   }
 
   100% {
-    opacity: 100%;
+    opacity: 1;
   }
 }
 
@@ -447,9 +455,9 @@ a em{
 }
 
 .detail-projectImg2 img{
-    background-color:#fcd1b5 ;
     width: 20em;
     height: 20em;
+    background-color: #fcd1b5;
     object-fit: contain;
     vertical-align: top;
     margin: 0.5em;
@@ -464,12 +472,26 @@ a em{
     display: inline-block;
     margin-left: 5%;
     width: 40%;
+    padding-top: 2%;
     vertical-align: top;
 }
 
 .detail-projectDes h2{
     text-align: center;
 }
+
+.detail-projectDes h1{
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.detail-projectDes p{
+   padding-top: 1em;
+}
+
+
+
+
 
 
 
@@ -501,6 +523,7 @@ a em{
 .detail-projectLinks p{
     display: inline-block;
     width: 45%;
+
 }
 
 @media (max-width: 1200px){
@@ -510,6 +533,8 @@ a em{
 
     .detail-projectImg2 img{
     width: 45%;
+    margin-left: auto;
+        margin-right: auto;
 }
 }
 
@@ -523,6 +548,8 @@ a em{
 }
     #projectList{
         display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
     .project{
     width: 90%;
@@ -534,14 +561,29 @@ a em{
 .detail-projectImg,.detail-projectDes,.detail-projectLinks,.detail-projectImg2{
     width: 90%;
 }
+
+.detail-projectImg{
+    margin-left: 5%;
+}
 .detail-projectImg2 img{
     width: 95%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .detail-projectLinks p{
     width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
+#arrow{
+    display: block;
+    margin-top: 1em;
+    margin-bottom:0em;
+}
+#arrow img{
+    width: 50px;
+    margin-top:30%;
+ }
 
 }
 
@@ -552,25 +594,70 @@ a em{
      #cover{
     width: 90%;
     padding-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
 }
     #nav{
-        display: none;
+    display: none;
     }
 
     #about{
-        height: 75%;
+    height: 75%;
     }
 
     .container {
     display: block;
     }
 
+    #arrow{
+    margin-left: auto;
+    margin-right: auto;
+}
+#arrow img{
+    width: 50px;
+    margin-top:30%;
+ }
+
 }
 
 @media (max-width: 550px){
+    body{
+        font-size: 11pt;
+    }
     #footer-nav,#footer-social{
         width: 80%;
+        margin-left: auto;
+        margin-right: auto;
     }
+
+
+#arrow img{
+    width: 50px;
+    margin-top:25%;
+ }
+
+
+}
+
+@media (max-width: 450px){
+    body{
+        font-size: 10pt;
+    }
+#arrow img{
+    width: 40px;
+    margin-top:10%;
+ }
+
+}
+
+@media (max-width: 350px){
+    body{
+        font-size: 9pt;
+    }
+    #arrow img{
+    width: 30px;
+    margin-top:5%;
+ }
 }
 
 .center{
