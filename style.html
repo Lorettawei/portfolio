@@ -14,6 +14,29 @@
 
   <body>
 
+    <header>
+  		<div id="navbar">
+  			<div id="logo">
+  				<a href="home.html"><img src="img/logo.png" alt="logo"></a>
+  			</div>
+  			<div id="nav">
+  				<a href="home.html#contact">Contact</a>
+  				<a href="home.html#work">Works</a>
+  				<a href="home.html#about" onclick="showBio()">About</a>
+  			</div>
+  			<div class="container" id="burg" onclick="showMenu(this)">
+  				<div class="bar1"></div>
+  				<div class="bar2"></div>
+  				<div class="bar3"></div>
+  				<div id="nav2">
+				<a href="home.html#about" onclick="showBio()">About</a>
+				<a href="home.html#work">Works</a>
+  				<a href="home.html#contact">Contact</a>
+  				</div>
+			</div>
+
+		</div>
+  	</header>
 
 <section class="center">
 
@@ -257,5 +280,23 @@
       </div>
     </footer>
 
+    <script>
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+	    	if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+	       		document.getElementById("navbar").style.top = "0";
+	    	}  else {
+	        	document.getElementById("navbar").style.top = "-75px";
+	    	}
+		}
+		function showBio() {
+    		document.getElementById("ux/ui").style.display = "none";
+    		document.getElementById("showMore").style.display = "none";
+    		document.getElementById("myBio").style.display = "block";
+		}
+		function showMenu(x) {
+    		x.classList.toggle("change");
+		}
+	</script>
   </body>
 </html>
