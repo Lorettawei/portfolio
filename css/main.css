@@ -413,8 +413,32 @@ a em{
     margin-bottom: 0em;
 }
 
+.banner-projectDes{
+    display: inline-block;
+    margin-left: 5%;
+    width: 40%;
+    padding-top: 2%;
+    vertical-align: top;
+}
+
+.banner-projectImg{
+    display: inline-block;
+    width: 50%;
+}
+
+.banner-projectImg img{
+    padding: 0em;
+    width: 100%;
+    margin: 0em;
+}
+
+.banner-projectDes h1{
+    text-align: center;
+    font-size: 2.5em;
+}
+
 .project-des{
-    width: 70%;
+    width: 75%;
     margin-top: 2em;
     margin-left: auto;
     margin-right: auto;
@@ -438,7 +462,7 @@ a em{
 
 .detail-projectImg{
     display: inline-block;
-    width: 50%;
+    width: 40%;
 }
 
 .detail-projectImg img{
@@ -471,8 +495,8 @@ a em{
 
 .detail-projectDes{
     display: inline-block;
-    margin-left: 5%;
-    width: 40%;
+    margin-left: 13%;
+    width: 35%;
     padding-top: 2%;
     vertical-align: top;
 }
